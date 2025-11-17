@@ -46,23 +46,6 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   </>
 );
 
-// const StatsItem: React.FC<StatsItemProps> = ({ number, description }) => (
-//   <div className="flex flex-col items-center flex-1">
-//     <h3
-//       className="text-2xl md:text-4xl font-bold text-white mb-2"
-//     >
-//       {number}
-//     </h3>
-//     <p className="text-sm md:text-base leading-tight text-center" >
-//       {description.map((line, index) => (
-//         <span key={index}>
-//           {line}
-//           {index < description.length - 1 && <br />}
-//         </span>
-//       ))}
-//     </p>
-//   </div>
-// );
 
 const FeatureImage: React.FC<{
   mobileSrc: string;
@@ -79,12 +62,6 @@ const FeatureImage: React.FC<{
   </div>
 );
 
-// Constants
-// const STATS_DATA = [
-//   { number: "1", description: ["Startup", "Selected Weekly"] },
-//   { number: "10", description: ["Weeks of", "Incubation"] },
-//   { number: "10", description: ["Startups Pitch", "to Investors"] },
-// ];
 
 const FEATURE_IMAGES = [
   {
@@ -101,10 +78,7 @@ const FEATURE_IMAGES = [
   { mobile: "/Demo day (1).svg", desktop: "/Demo day.svg", alt: "Demo Day" },
 ];
 
-// const ACTION_IMAGES = [
-//   { src: "/Get incubated (1).svg", alt: "Get Incubated" },
-//   { src: "/Get funded (1).svg", alt: "Get Funded" },
-// ];
+
 
 // Styles
 const styles = {
@@ -348,7 +322,7 @@ const PitchTankLandingPage: React.FC = () => {
   
         {/* CFC Venture Studio Section */}
         <div className="text-center mt-20 md:mt-32">
-          {/* --- DESKTOP VIEW --- */}
+          {/*DESKTOP VIEW */}
           <div className="hidden md:block relative">
             {/* Main Content SVG (Desktop) */}
             <img
@@ -373,9 +347,9 @@ const PitchTankLandingPage: React.FC = () => {
               </button>
             </div>
           </div>
-          {/* --- END DESKTOP VIEW --- */}
+          {/* END DESKTOP VIEW*/}
 
-          {/* --- MOBILE VIEW --- */}
+          {/*MOBILE VIEW */}
           <div className="md:hidden relative pb-10">
             {/* Main Content SVG (Mobile) */}
             <img
@@ -400,7 +374,7 @@ const PitchTankLandingPage: React.FC = () => {
               </button>
             </div>
           </div>
-          {/* --- END MOBILE VIEW --- */}
+          {/*  END MOBILE VIEW  */}
         </div>
         {/* End New: CFC Venture Studio Section */}
 
