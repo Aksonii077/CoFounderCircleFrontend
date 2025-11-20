@@ -341,7 +341,7 @@ const PitchTankLandingPage: React.FC = () => {
           </div>
           {/*  END MOBILE VIEW  */}
         </div>
-        {/* End New: CFC Venture Studio Section */}
+        {/* End: CFC Venture Studio Section */}
 
         {/*About CoFounder Circle Section */}
         <div className="text-center mt-20 md:mt-32">
@@ -366,7 +366,7 @@ const PitchTankLandingPage: React.FC = () => {
           </div>
           {/* New Darpan Sanghvi Bio/Link */}
           <p className="text-white text-lg md:text-xl leading-snug max-w-4xl mx-auto mt-12 md:mt-16 mb-20 md:mb-32 font-semibold px-4">
-            {/* Applied font-semibold to the entire paragraph for more weight */}
+            
             Founded by{" "}
             <a
               href="/darpansanghvi"
@@ -377,7 +377,7 @@ const PitchTankLandingPage: React.FC = () => {
             , an entrepreneur who built and lost a Unicorn,
             <span className="text-[#3AE5A7]">
               {" "}
-              {/* Highlighted mission statement with accent color */}
+              
               CoFounder Circle is on a mission to democratise entrepreneurship.
             </span>
           </p>
