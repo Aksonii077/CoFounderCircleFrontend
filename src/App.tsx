@@ -4,11 +4,11 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { Toaster } from 'sonner';
+import { Helmet } from 'react-helmet';
 import { SimpleAuthProvider } from '@/providers/SimpleAuthProvider';
 import { useGA4Analytics } from '@/hooks/useGA4Analytics';
 import { useSimpleAuth } from '@/providers/SimpleAuthProvider';
 import AppRoutes from '@/routes/AppRoutes';
-import { Helmet } from 'react-helmet';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 
 function ScrollToTop() {

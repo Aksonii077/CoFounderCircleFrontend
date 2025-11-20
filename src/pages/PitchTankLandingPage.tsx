@@ -12,11 +12,6 @@ interface ResponsiveImageProps {
   height?: string;
 }
 
-// interface StatsItemProps {
-//   number: string;
-//   description: string[];
-// }
-
 // Reusable Components
 const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   mobileSrc,
@@ -46,7 +41,6 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   </>
 );
 
-
 const FeatureImage: React.FC<{
   mobileSrc: string;
   desktopSrc: string;
@@ -62,7 +56,6 @@ const FeatureImage: React.FC<{
   </div>
 );
 
-
 const FEATURE_IMAGES = [
   {
     mobile: "/Structured.svg",
@@ -77,8 +70,6 @@ const FEATURE_IMAGES = [
   { mobile: "/Acess to.svg", desktop: "/Group 88.svg", alt: "Access To" },
   { mobile: "/Demo day (1).svg", desktop: "/Demo day.svg", alt: "Demo Day" },
 ];
-
-
 
 // Styles
 const styles = {
@@ -204,8 +195,8 @@ const PitchTankLandingPage: React.FC = () => {
             <p className="text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto">
               Pitch Tank is our startup discovery engine. Founders complete the
               Pitch Tank form, and if there is a good mutual fit, startups can
-              enter either our 10-Week Acceleration Program or get Co-Build with
-              us in our Venture Studio.
+              enter either our 10-Week Acceleration Program or Co-Build with us
+              in our Venture Studio.
             </p>
             {/*Button- StartApplication */}
             <div className="mt-8 md:mt-12">
@@ -271,16 +262,16 @@ const PitchTankLandingPage: React.FC = () => {
             />
           </div>
         </div>
-        {/* End : Track Record Section */}
+        {/* End: Track Record Section */}
 
-        {/*CFC Accelerator Section:10-Week Acceleration Program */}
+        {/*CFC Accelerator Information */}
         <div className="w-11/12 mx-auto px-4 text-center mt-20 md:mt-32">
           {" "}
           {/*SVG - Desktop */}
           <div className="hidden md:block">
             <img
-              src="/10-week-accelerator-desktop.svg"
-              alt="CFC 10-Week Acceleration Program"
+              src="/cfc-accelerator-desktop.svg"
+              alt="CFC Accelerator"
               className="w-full h-auto mx-auto max-w-4xl"
               loading="lazy"
             />
@@ -288,38 +279,14 @@ const PitchTankLandingPage: React.FC = () => {
           {/*SVG - Mobile */}
           <div className="md:hidden">
             <img
-              src="/10-week-accelerator-mobile.svg"
-              alt="CFC 10-Week Acceleration Program"
+              src="/cfc-accelerator-mobile.svg"
+              alt="CFC Accelerator"
               className="w-full h-auto mx-auto max-w-sm"
               loading="lazy"
             />
           </div>
         </div>
 
-        {/*10-Week Plan Section */}
-        <div className="w-11/12 mx-auto px-4 text-center mt-20 md:mt-32">
-          {/*SVG - Desktop */}
-          <div className="hidden md:block">
-            <img
-              src="/desktop-10-week-plan.svg"
-              alt="10-Week Accelerator Plan"
-              className="w-full h-auto mx-auto max-w-5xl"
-              loading="lazy"
-            />
-          </div>
-          {/*SVG - Mobile */}
-          <div className="md:hidden">
-            <img
-              src="/mobile-10-week-plan.svg"
-              alt="10-Week Accelerator Plan"
-              className="w-full h-auto mx-auto max-w-xl"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        {/* End of 10-Week Plan Section */}
-
-  
         {/* CFC Venture Studio Section */}
         <div className="text-center mt-20 md:mt-32">
           {/*DESKTOP VIEW */}
@@ -334,7 +301,6 @@ const PitchTankLandingPage: React.FC = () => {
             {/* Manual HTML Button (Desktop) */}
             <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2">
               {" "}
-             
               <button
                 onClick={handleStartApplication}
                 className="px-8 md:px-12 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
@@ -361,7 +327,6 @@ const PitchTankLandingPage: React.FC = () => {
             {/* Manual HTML Button (Mobile) */}
             <div className="absolute bottom-[5%] left-1/2 -translate-x-1/2">
               {" "}
-              
               <button
                 onClick={handleStartApplication}
                 className="px-8 py-4 rounded-full text-base font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
@@ -399,11 +364,28 @@ const PitchTankLandingPage: React.FC = () => {
               loading="lazy"
             />
           </div>
+          {/* New Darpan Sanghvi Bio/Link */}
+          <p className="text-white text-lg md:text-xl leading-snug max-w-4xl mx-auto mt-12 md:mt-16 mb-20 md:mb-32 font-semibold px-4">
+            {/* Applied font-semibold to the entire paragraph for more weight */}
+            Founded by{" "}
+            <a
+              href="/darpansanghvi"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              Darpan Sanghvi
+            </a>
+            , an entrepreneur who built and lost a Unicorn,
+            <span className="text-[#3AE5A7]">
+              {" "}
+              {/* Highlighted mission statement with accent color */}
+              CoFounder Circle is on a mission to democratise entrepreneurship.
+            </span>
+          </p>
         </div>
         {/* End- About CoFounder Circle Section */}
 
         {/*Ready to Get Started Section */}
-        <div className="text-center mt-20 md:mt-32">
+        <div className="text-center">
           {" "}
           {/* Separating Blue Line */}
           <div className="h-px w-full bg-blue-500 mb-20 md:mb-32"></div>{" "}
